@@ -1,0 +1,1 @@
+!function(){const e=document.querySelectorAll(".elipse"),c=document.querySelectorAll(".checkbox");e.forEach((e=>{e.addEventListener("click",(()=>{e.classList.toggle("hide")}))})),c.forEach((e=>{e.addEventListener("click",(()=>{e.classList.toggle("click")}))}))}();

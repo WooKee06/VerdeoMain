@@ -15,19 +15,14 @@
 		@@include('blocks/header.html')
 		<main class="wrapper">
 			@@include('blocks/navigate.html') @@include('blocks/croshki.html')
-			@@include('blocks/newsCategory.html')
+
 			<div class="newsCard">
-				<ul class="blog-item-list">
-					@@include('blocks/blog-itemComponent.html')
-					@@include('blocks/blog-itemComponent.html')
-					@@include('blocks/blog-itemComponent.html')
-					@@include('blocks/blog-itemComponent.html')
-					@@include('blocks/blog-itemComponent.html')
-					@@include('blocks/blog-itemComponent.html')
-					@@include('blocks/blog-itemComponent.html')
-					@@include('blocks/blog-itemComponent.html')
-					@@include('blocks/blog-itemComponent.html')
-				</ul>
+				<div>
+					<h2>Почему стоит покупать именно в Verdeo</h2>
+					@@include('blocks/benefit.html')
+				</div>
+				@@include('blocks/article.html')
+
 				<div>
 					<div class="mailing">
 						<div class="mailing-content">
@@ -38,9 +33,14 @@
 					</div>
 					<span
 						>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-						sapiente ad asperiores cumque nemo porro .</span
+						sapiente ad asperiores cumque nemo porro</span
 					>
-					@@include('blocks/benefit.html')
+					<h2>Больше интересного</h2>
+					<ul class="more-interesting">
+						@@include('blocks/blog-itemComponent.html')
+						@@include('blocks/blog-itemComponent.html')
+						@@include('blocks/blog-itemComponent.html')
+					</ul>
 				</div>
 			</div>
 			@@include('blocks/relatedProduct.html')
