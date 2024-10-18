@@ -1,0 +1,147 @@
+.products {
+	margin: 20px 0;
+
+	h2 {
+		font-size: 30px;
+		font-weight: 500;
+		margin: 0;
+	}
+	a {
+		color: #000;
+	}
+
+	ul {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 20px;
+		margin: 20px 0;
+
+		.products-item {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+			width: 25%;
+
+			&__img {
+				width: 100%;
+				background-color: rgb(233, 233, 233);
+				height: 250px;
+				border-radius: 10px;
+
+				background-image: url(../../img/lw4z12hgx9n4hijkx0zl2c37rhwlyx7o.jpg);
+				background-size: cover;
+				background-repeat: no-repeat;
+			}
+
+			.popular-products-item__img {
+				width: 100%;
+				background-color: rgb(233, 233, 233);
+				background-image: url(../../img/i.webp);
+				background-size: cover;
+				background-repeat: no-repeat;
+				height: 150px;
+				border-radius: 10px;
+				position: relative;
+
+				> span {
+					position: absolute;
+					left: -10px;
+					top: -10px;
+
+					background-color: #ffd256;
+					border-radius: 50%;
+					padding: 10px;
+
+					font-size: 13px;
+					font-weight: 500;
+				}
+			}
+
+			&__description {
+				color: #333333;
+				font-weight: 400;
+				font-size: 15px;
+			}
+
+			&__price {
+				font-size: 25px;
+				font-weight: 500;
+
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+
+				> div {
+					display: flex;
+					align-items: center;
+					gap: 10px;
+
+					button {
+						svg {
+							path {
+								stroke: #b8b8b8;
+								transition: all 0.3s ease-in-out;
+							}
+						}
+					}
+
+					button:nth-child(1) {
+						transition: all 0.3s ease-in-out;
+
+						&:hover {
+							path {
+								stroke: #ff006a;
+							}
+						}
+					}
+					button:nth-child(2) {
+						&:hover {
+							path {
+								stroke: #000;
+							}
+						}
+						svg {
+							path {
+								stroke: #b8b8b8;
+								transition: all 0.3s ease-in-out;
+							}
+						}
+					}
+				}
+			}
+
+			&__btn {
+				display: flex;
+				align-items: center;
+				gap: 20px;
+
+				button:nth-child(1) {
+					padding: 12px 15px;
+					border: 1px solid #b8b8b8;
+					border-radius: 10px;
+					transition: all 0.3s ease-in-out;
+
+					&:hover {
+						border: 1px solid transparent;
+						background-color: #ff006a;
+						color: #fff;
+					}
+				}
+				button:nth-child(2) {
+					&:hover {
+						path {
+							stroke: #000;
+						}
+					}
+					svg {
+						path {
+							stroke: #b8b8b8;
+							transition: all 0.3s ease-in-out;
+						}
+					}
+				}
+			}
+		}
+	}
+}

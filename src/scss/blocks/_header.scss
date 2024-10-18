@@ -1,0 +1,65 @@
+section {
+	background-color: #f9f9f9;
+
+	.head-contact {
+		width: 90vw;
+		margin: 0 auto;
+
+		padding: 10px 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		&__mail,
+		&__tel {
+			display: flex;
+			align-items: center;
+			gap: 20px;
+
+			> span {
+				display: flex;
+				align-items: center;
+				gap: 10px;
+
+				font-weight: 500;
+			}
+		}
+	}
+}
+
+header {
+	margin: 15px 0;
+	.wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 20px;
+
+		.input {
+			border: 1px solid #e6e6e6;
+			border-radius: 8px;
+			width: inherit;
+
+			.input-wrapper {
+				padding: 10px 14px;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
+		}
+
+		.btn {
+			display: flex;
+			align-items: center;
+			gap: 15px;
+			width: 160px;
+			span {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				gap: 5px;
+				cursor: pointer;
+			}
+		}
+	}
+}
